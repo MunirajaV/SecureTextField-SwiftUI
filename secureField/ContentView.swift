@@ -30,7 +30,6 @@ struct ContentView: View {
                 , y: 0)
             } else {
                 SecureField("Password",text: self.$password).padding()
-                    .foregroundColor(Color.black)
                     .frame(width: UIScreen.main.bounds.width - 34)
                     .background(Color.white)
                 .cornerRadius(25)
@@ -48,10 +47,10 @@ struct ContentView: View {
             Button(action: {}) {
                 Text("Login").padding()
                 .fixedSize()
-                .frame(width: 140, height: 45)
+                .frame(width: 140, height: 50)
                     .foregroundColor(.white)
                     .background(Color(#colorLiteral(red: 0.9568627477, green: 0.6588235497, blue: 0.5450980663, alpha: 1)))
-                .cornerRadius(8)
+                .cornerRadius(25)
             }
         } .padding([.leading, .trailing])
             
